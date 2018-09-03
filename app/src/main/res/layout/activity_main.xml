@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+             <TextView
+                android:text="@string/status"
+                android:id="@+id/status"
+                style="@style/Status" />
+
+            <TextView
+                android:text="@string/category_question"
+                android:id="@+id/category"
+                style="@style/Status" />
+
+            <TextView
+                android:text="@string/title_question"
+                android:id="@+id/title"
+                style="@style/TitleQuestion" />
+
+            <TextView
+                android:text="@string/question"
+                android:id="@+id/question"
+                style="@style/Question" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:id="@+id/buttons_holder">
+
+                        <Button
+                            style="@style/Answer"
+                            android:id="@+id/Yes"
+                            android:text="@string/yes"
+                            android:onClick="answerYes"/>
+                        <Button
+                            style="@style/Answer"
+                            android:id="@+id/No"
+                            android:text="@string/no"
+                            android:onClick="answerNo"/>
+
+
+                    </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

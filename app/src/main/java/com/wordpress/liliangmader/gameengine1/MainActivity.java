@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     int numberLives=5;
+    int numberOfProbs=5;
     int numberOfQuestions=10;
     int sortQuestionNumber=0;
     int probRightAnswer=50;
@@ -34,11 +35,48 @@ public class MainActivity extends AppCompatActivity {
         myStatus.setText(String.valueOf(myCurrentStatus));
 
         TextView myQuestion = (TextView) findViewById(R.id.question);
-        myQuestion.setText(String.valueOf(sortQuestionNumber));
+        //String questionIndex = "R.string.q"+1;
+        //Log.v("MainActivity","questionIndex= "+questionIndex);
+        //String packageName = getPackageName();
+        //int resId = getResources().getIdentifier(questionIndex, String
+        //Log.v("MainActivity","resID: "+resId);
+       // String textQuestion = getString(resID);
+        switch (sortQuestionNumber) {
+            case 1:
+                myQuestion.setText(R.string.q1);
+                break;
+            case 2:
+                myQuestion.setText(R.string.q2);
+                break;
+            case 3:
+                myQuestion.setText(R.string.q3);
+                break;
+            case 4:
+                myQuestion.setText(R.string.q4);
+                break;
+            case 5:
+                myQuestion.setText(R.string.q5);
+                break;
+            case 6:
+                myQuestion.setText(R.string.q6);
+                break;
+            case 7:
+                myQuestion.setText(R.string.q7);
+                break;
+            case 8:
+                myQuestion.setText(R.string.q8);
+                break;
+            case 9:
+                myQuestion.setText(R.string.q9);
+                break;
+            case 10:
+                myQuestion.setText(R.string.q10);
+                break;
+        }
     }
     /**
      * Click on button "Yes"
-     * @param view
+     * @param view button Yes
      */
     public void answerYes(View view){
         //no changes numberLives
@@ -48,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     }
     /**
      * Click on button "No"
-     * @param view
+     * @param view button NO
      */
     public void answerNo(View view){
       //Lost one life after failing survival test

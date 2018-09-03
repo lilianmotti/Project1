@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="q01">Here is a question number 1. Please answer:</string>
-    <string name="q02">Here is a question number 2. Please answer:</string>
-    <string name="q03">Here is a question number 3. Please answer:</string>
-    <string name="q04">Here is a question number 4. Please answer:</string>
-    <string name="q05">Here is a question number 5. Please answer:</string>
+    <string name="q1">Here is a question number 1. Please answer:</string>
+    <string name="q2">Here is a question number 2. Please answer:</string>
+    <string name="q3">Here is a question number 3. Please answer:</string>
+    <string name="q4">Here is a question number 4. Please answer:</string>
+    <string name="q5">Here is a question number 5. Please answer:</string>
+    <string name="q6">Here is a question number 6. Please answer:</string>
+    <string name="q7">Here is a question number 7. Please answer:</string>
+    <string name="q8">Here is a question number 8. Please answer:</string>
+    <string name="q9">Here is a question number 9. Please answer:</string>
+    <string name="q10">Here is a question number 10. Please answer:</string>
 </resources>
